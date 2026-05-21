@@ -332,7 +332,7 @@ elif st.session_state.view == "details":
 
     if data.get("backdrop_url"):
         st.markdown("#### Backdrop")
-        st.image(data["poster_url"], width="stretch")
+        st.image(data["poster_url"], width=300)
 
     st.divider()
     st.markdown("### ✅ Recommendations")
