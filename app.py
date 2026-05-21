@@ -95,7 +95,7 @@ def poster_grid(cards, cols=6, key_prefix="grid"):
 
             with colset[c]:
                 if poster:
-                    st.image(m["poster_url"], width=220)
+                    st.image(m["poster_url"], width=220)f
                 else:
                     st.write("🖼️ No poster")
 
@@ -309,7 +309,7 @@ elif st.session_state.view == "details":
     with left:
         st.markdown("<div class='card'>", unsafe_allow_html=True)
         if data.get("poster_url"):
-            st.image(data["backdrop_url"], width="stretch")
+            st.image(data["backdrop_url"], width=900)
         else:
             st.write("🖼️ No poster")
         st.markdown("</div>", unsafe_allow_html=True)
