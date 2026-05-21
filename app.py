@@ -309,7 +309,7 @@ elif st.session_state.view == "details":
     with left:
         st.markdown("<div class='card'>", unsafe_allow_html=True)
         if data.get("poster_url"):
-            st.image(data["backdrop_url"], width=800)
+            st.image(data["poster_url"], width=250)
         else:
             st.write("🖼️ No poster")
         st.markdown("</div>", unsafe_allow_html=True)
@@ -332,7 +332,7 @@ elif st.session_state.view == "details":
 
     if data.get("backdrop_url"):
         st.markdown("#### Backdrop")
-        st.image(data["poster_url"], width=300)
+        st.image(data["backdrop_url"], width=900)
 
     st.divider()
     st.markdown("### ✅ Recommendations")
